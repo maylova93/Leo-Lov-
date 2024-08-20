@@ -1,0 +1,103 @@
+// Colors
+$white: #FAFAFA;
+$dark-blue: #2C3B6F;
+$blue: #002BC2;
+$black: #000000;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jura:wght@300..700&display=swap');
+
+$font-secondary: 'Inter';
+$font-tertiary: 'Jura';
+
+.meetTheTeam {
+  padding: 50px;
+  border-radius: 8px;
+  margin: 0 auto;
+  text-align: center;
+   
+}
+
+h2 {
+  font-family: $font-tertiary;
+  color: $blue;
+  margin-top: 40px;
+  text-align: center;  
+}
+
+.teamGrid {
+  display: flex;
+  justify-content: space-around;
+}
+
+.teamMember {
+  text-align: center;
+  margin: 0 20px;
+  max-width: 200px;
+}
+
+.teamImage {
+  border-radius: 50%;
+  border: 4px solid $dark-blue;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: $font-tertiary;
+  color: $blue;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-family: $font-secondary;
+  color: $black;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  min-height: 60px; 
+}
+
+.line {
+  width: 200px;
+  height: 8px;  
+  background-color: $dark-blue;
+  margin: 0 auto; 
+  border-radius: 4px; 
+}
+@media (max-width: 1024px) {
+  .teamGrid {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .teamMember {
+    max-width: 300px; 
+    margin: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .teamGrid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .teamMember {
+    max-width: 100%;
+    margin: 20px 0;
+  }
+
+  h3 {
+    font-size: 25px; 
+  }
+
+  p {
+    font-size: 20px; 
+  }
+
+  .line {
+    width: 150px; 
+  }
+}

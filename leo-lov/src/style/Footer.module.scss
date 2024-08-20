@@ -1,0 +1,82 @@
+// Colors
+$white: #FAFAFA;
+$dark-blue: #2C3B6F;
+$blue: #002BC2;
+$black: #000000;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jura:wght@300..700&display=swap');
+
+$font-secondary: 'Inter';
+$font-tertiary: 'Jura';
+
+.main_footer {
+    display: flex;
+    padding: 15px 30px;  
+    justify-content: space-around;
+    color: $white;
+    background-color: $dark-blue; 
+    border-top: 2px solid $white;
+
+    .footerSection {
+       flex: 1;
+       margin-top: 5px;
+
+        h2 {
+            font-family: $font-tertiary;  
+            text-align: left; 
+            color: $white;
+            font-size: 20px;
+        }
+        h3{
+            font-family: $font-tertiary; 
+            text-align: left;
+            font-size: 12px; 
+            margin-bottom: 5px;
+            color: $white;
+        }
+
+        p {
+            font-family: $font-secondary;
+             margin: -1.5rem;
+             padding-top: 5px;
+             padding-left: 1.5rem;
+            // padding-bottom: -2rem;
+            //padding-bottom: 5p;
+            font-size: 12px; 
+            color: $white; 
+        }
+        .icons {
+            display: flex;
+            gap: 15px;  
+            margin-top: 20px;  
+            img {
+                width: 35px;
+                height: 35px;
+                filter: brightness(0) invert(1);  
+            }
+        }
+    }
+}
+@media(max-width:768px){
+    .main_footer{
+        display: gr;
+        align-items: center;
+        padding: 15px 10px;
+    }
+    .footerSection{
+        width: 100%;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    h2, h3 {
+        text-align: center;
+        font-size: 15px; 
+    }
+    p {
+        max-width: 100%;
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+    }
+}

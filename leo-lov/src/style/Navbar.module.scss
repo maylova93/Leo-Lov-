@@ -1,0 +1,85 @@
+// Colors
+$white: #FAFAFA;
+$dark-blue: #2C3B6F;
+$blue: #002BC2;
+$black: #000000;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jura:wght@300..700&display=swap');
+
+$font-secondary: 'Inter';
+$font-tertiary: 'Jura';
+
+.navStyle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 5px solid $blue; 
+    position: sticky;
+    top: 0;
+    background-color: $white;
+    z-index: 1000;
+  
+  }
+  
+  ul {
+      display: flex;
+    color: $blue;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  li {
+    padding: 0 10px;
+    border-right:1px solid $blue;
+      font-family: $font-secondary; 
+    margin-right: 20px; 
+  }
+  
+  li:last-child {
+    margin-right: 0; 
+    border-right: none;
+    padding-right: 0;
+  }
+  
+  .linkStyle {
+    font-family: $font-tertiary;
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    
+    &:hover {
+      color: $dark-blue; 
+      text-decoration: underline; 
+    }
+  }
+  .logo {
+    font-family: $font-tertiary; 
+    font-size: 32px;
+    line-height: 37.86px;
+    a {
+        text-decoration: none;
+        color: inherit;
+        span:first-child {
+            color: $blue;
+        }
+        span:last-child {
+            color: inherit;
+            font-weight: 400; 
+        }
+    }
+}
+.navStyle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .navStyle ul {
+      display: grid; 
+  }
+}

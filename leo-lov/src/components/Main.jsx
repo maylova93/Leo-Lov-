@@ -1,0 +1,1 @@
+import './components/style/variables.module.scss';

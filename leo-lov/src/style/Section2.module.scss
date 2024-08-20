@@ -1,0 +1,102 @@
+// Colors
+$white: #FAFAFA;
+$dark-blue: #2C3B6F;
+$blue: #002BC2;
+$black: #000000;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jura:wght@300..700&display=swap');
+
+$font-secondary: 'Inter', sans-serif;
+$font-tertiary: 'Jura', sans-serif;
+
+.section2Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    border-radius: 8px;
+    margin: 20px 0 60px 0; 
+    border: 8px solid $dark-blue;
+    background-color: $white;
+}
+
+.imageWrapper2 {
+  flex: 1;
+  max-width: 50%; 
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.section2Image {
+  width: 100%;
+  border-left: 8px solid $dark-blue; 
+}
+
+.gal2 {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 0;
+}
+
+.section2Title {
+  font-family: $font-tertiary;
+  color: $blue;
+  margin-bottom: 20px;
+
+  height: 74px;
+  text-align: center;
+}
+
+.section2Text {
+  font-family: $font-secondary;
+  color: $dark-blue;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+@media (max-width: 1024px) {
+  .section2Container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 10px 40px 10px; 
+  }
+
+  .imageWrapper2 {
+    max-width: 100%;
+    margin-bottom: 5px; 
+  }
+
+  .section2Image {
+      width: 100%;
+    border-left: none;
+    border-bottom: 8px solid $dark-blue;
+  }
+
+  .gal2 {
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .section2Title {
+    font-size: 30px; 
+    height: auto;
+  }
+  
+
+  .section2Text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .gal2 {
+    padding: 15px;
+  }
+}

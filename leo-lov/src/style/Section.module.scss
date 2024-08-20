@@ -1,0 +1,120 @@
+// Colors
+$white: #FAFAFA;
+$dark-blue: #2C3B6F;
+$blue: #002BC2;
+$black: #000000;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jura:wght@300..700&display=swap');
+
+$font-secondary: 'Inter';
+$font-tertiary: 'Jura';
+
+.gallery {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    position: relative;
+    padding: 0;
+    border-radius: 8px;
+    border: 8px solid $dark-blue;
+    background-color: $white;
+    margin: -100px 0 30px 0; 
+
+}
+
+.imageWrapper {
+  flex: 1;
+  max-width: 50%; 
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.sectionImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-right: 8px solid $dark-blue; 
+}
+
+.gal {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  margin: 0;
+
+}
+
+h3 {
+  font-family: $font-tertiary;
+  color: $blue;
+  margin-bottom: 20px;
+  font-size: 32px;
+  height: 74px;
+  text-align: center;
+}
+
+.galleryText {
+  font-family: $font-secondary;
+  color: $dark-blue;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+
+@media (max-width: 1024px) {
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px 30px 10px; 
+  }
+
+  .imageWrapper {
+    max-width: 100%;
+    margin-bottom: 20px; 
+  }
+
+  .sectionImage {
+    border-right: none;
+    border-bottom: 8px solid $dark-blue;
+    width: 100%;
+    height: auto;
+  }
+
+  .gal {
+    padding: 20px;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 28px; 
+  }
+
+  .galleryText {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    margin: 0 5px 20px 5px; 
+  }
+
+  .gal {
+    padding: 20px;
+  }
+
+  h3 {
+    font-size: 24px; 
+    height: 20px;
+  }
+
+  .galleryText {
+    font-size: 15px; 
+  }
+}

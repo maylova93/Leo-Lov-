@@ -1,0 +1,67 @@
+// Colors
+$white: #FAFAFA;
+$dark-blue: #2C3B6F;
+$blue: #002BC2;
+$black: #000000;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jura:wght@300..700&display=swap');
+
+$font-secondary: 'Inter';
+$font-tertiary: 'Jura';
+
+.containerStyle {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  .cardStyle {
+    background-color: $white; 
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 50px;
+    width: 180px;
+    height: 355px;
+    text-align: center; 
+    transform: translateY(-150px); 
+    margin: 0;
+  }
+  
+  .cardTitle {
+    font-family: $font-tertiary; 
+    justify-content: space-between;
+    color: $blue; 
+    font-size: 24px;
+    margin-bottom: 70px;
+  }
+  
+  .cardText {
+    font-family: $font-secondary; 
+    color: $black; 
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left; 
+    margin-bottom: 10px;
+    flex-grow: 1;
+  }
+@media (max-width: 768px) {
+  .containerStyle {
+      grid-template-columns:repeat(2);
+      gap: 25px;
+  }
+}
+
+.cardStyle {
+  padding: 30px;
+}
+
+@media (max-width: 768px) {
+  .cardStyle {
+      padding: 35px; 
+  }
+}
